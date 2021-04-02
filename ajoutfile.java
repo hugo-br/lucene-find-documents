@@ -90,7 +90,7 @@ public class ajoutfile {
             // Boucle permettant de faire plusieurs recherches
             while (1 == 1) {
 
-                // entr�e des informations recherch�es au clavier
+                // entr�e des informations recherches au clavier
                 System.out.print("Entrez le texte a chercher - ou tapez enter pour sortir: ");
                 in = new BufferedReader(new InputStreamReader(System.in, "UTF-8"));
                 String lettres = in.readLine();
