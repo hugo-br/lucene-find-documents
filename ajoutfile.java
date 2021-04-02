@@ -90,7 +90,7 @@ public class ajoutfile {
             // Boucle permettant de faire plusieurs recherches
             while (1 == 1) {
 
-                // entr�e des informations recherches au clavier
+                // entree des informations recherches au clavier
                 System.out.print("Entrez le texte a chercher - ou tapez enter pour sortir: ");
                 in = new BufferedReader(new InputStreamReader(System.in, "UTF-8"));
                 String lettres = in.readLine();
@@ -109,7 +109,7 @@ public class ajoutfile {
                 TopDocs results = searcher.search(query, 4096);
                 ScoreDoc[] hits = results.scoreDocs;
 
-                // Impression des r�sultats
+                // Impression des resultats
                 System.out.println("Resultat: " + hits.length + " documents contenaient " + lettres);
                 for (int i = 0; i < hits.length; i++) {
                     Document doc = searcher.doc(hits[i].doc);
